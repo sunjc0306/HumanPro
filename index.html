@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HumanPro: Single-view 3D Clothed Human Reconstruction</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Segoe UI,Roboto;
+        background: #fafbfd;
+        color: #222;
+    }
+    .container {
+        text-align: center;
+        padding: 60px 20px 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .title {
+        font-size: 42px;
+        font-weight: 700;
+        background: linear-gradient(90deg, #406bff, #8a64ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 12px;
+    }
+    .subtitle {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .authors a {
+        color: #406bff;
+        text-decoration: none;
+        margin: 0 4px;
+    }
+    .authors a:hover { text-decoration: underline; }
+    .institutes {
+        margin-top: 14px;
+        font-size: 15px;
+        color: #666;
+    }
+
+    /* Logo grid */
+    .logo-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 32px auto;
+        flex-wrap: wrap;
+    }
+    .logo-row img {
+        height: 68px;
+        opacity: 0.92;
+    }
+
+    /* Tag bubbles */
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        margin: 28px 0;
+    }
+    .tag {
+        background: #eff3fe;
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 15px;
+        color: #3559e6;
+        border: 1px solid #dbe3ff;
+        white-space: nowrap;
+    }
+
+    /* Buttons */
+    .btn-row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 22px;
+    }
+    .btn {
+        padding: 14px 26px;
+        border-radius: 35px;
+        font-size: 16px;
+        color: white;
+        background: linear-gradient(90deg, #4464ff, #8e63ff);
+        font-weight: 500;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(93,76,255,0.25);
+    }
+    .btn:hover { opacity: 0.8; }
+
+    /* For icons in buttons */
+    .btn img {
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    @media (max-width: 600px) {
+        .title { font-size: 32px; }
+        .subtitle { font-size: 18px; }
+        .logo-row img { height: 54px; }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="title">HumanPro: <div style="color: #333;">Single-View 3D Clothed Human Reconstruction<br>with Progressive Normal Guidance</div></div>
+
+    <!-- authors -->
+    <div class="authors">
+        <a href="https://sunjc0306.github.io/">Jianchi Sun</a><sup>1</sup>,
+        <a href="#">Fei Luo</a><sup>1</sup>,
+        <a href="#">Wenzhuo Fan</a><sup>1</sup>,
+        <a href="#">Yu Jiang</a><sup>1</sup>,
+        <a href="https://graphvision.whu.edu.cn/">Chunxia Xiao</a><sup>1</sup>,
+    </div>
+
+    <!-- institute mapping -->
+    <div class="institutes">
+        <sup>1</sup> School of Computer Science, Wuhan University, Wuhan, China
+    </div>
+
+    <!-- logos -->
+    <div class="logo-row">
+        <img src="https://www.whu.edu.cn/new2024/js/logo.png" style="background-color: #115740"/>
+<!--        <img src="logo-univA.png" />-->
+<!--        <img src="logo-instituteC.png" />-->
+    </div>
+
+    <!-- tags -->
+    <div class="tags">
+        <div class="tag">3D Human Reconstruction</div>
+        <div class="tag">Single-View</div>
+        <div class="tag">Normals Guidance</div>
+        <div class="tag">Clothed Human Modeling</div>
+        <div class="tag">Gaussian/NeRF Ready</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+        <a class="btn" href="#" target="_blank"> 📄 Paper </a>
+        <a class="btn" href="#" target="_blank"> 💻 Code </a>
+<!--        <a class="btn" href="#" target="_blank"> 📂 Dataset </a>-->
+        <a class="btn" href="#" target="_blank"> 🎬 Demo </a>
+        <a class="btn" href="#" target="_blank"> 📊 Lab WebSite </a>
+    </div>
+
+</div>
+</body>
+</html>
